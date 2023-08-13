@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Pilgrim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="IMAGES/logo.png" width="250px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+            <a href="cart.html"><img src="IMAGES/cart.jpg" width="30px" height="30px"></a>
+        <img src="IMAGES/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!---------cart item details-------->
+    
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Products</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <a href="pro1details.html"><img src="IMAGES/pro1.webp"></a>
+                    <div>
+                        <a href="pro1details.html"><p>25% AHA, 2% BHA, 5% PHA Peeling Solution</p></a>
+                        <small>Price: &#8377 645.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377 645.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <a href="pro5details.html"><img src="IMAGES/pro5.webp"></a>
+                    <div>
+                        <a href="pro5details.html"><p>Argan Oil Hair Mask with White Lotus & Camellia</p></a>
+                        <small>Price: &#8377 600.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377 600.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <a href="pro6details.html"><img src="IMAGES/pro6.webp"></a>
+                    <div>
+                        <a href="pro6details.html"><p>3% Redensyl + 4% Anagain Hair Growth Serum</p></a>
+                        <small>Price: &#8377 895.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377 895.00</td>
+        </tr>
+    </table>
+    
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>&#8377 2140.00</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free over 999</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>&#8377 2140.00</td>
+            </tr>
+        </table>
+    </div>
+    
+    
+</div>
+    
+    
+<!-------footer-------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li>Terms and Conditions</li>
+                        <li>Shipping and Cancellation</li>
+                        <li>FAQ</li>
+                        <li>Privacy Policy</li>
+                        <li>Refund Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <img src="IMAGES/logo.png">
+                    <p>Secret of Beauty</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>JOIN #PILGRIMTRIBE</h3>
+                    <ul>
+                        <li>Unlock Beauty Secrets,<br>Exclusive offers and More.</li>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>YOU'LL LOVE US HERE</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Easy Tutorials</p>
+        </div>
+    </div>
+
+<!-------js for toggle menu------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
