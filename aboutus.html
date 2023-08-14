@@ -24,87 +24,14 @@
                 <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
-            <a href="cart.html"><img src="IMAGES/cart.jpg" width="30px" height="30px"></a>
+        <img src="IMAGES/cart.jpg" width="30px" height="30px">
         <img src="IMAGES/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
 
-<!---------cart item details-------->
-    
-<div class="small-container cart-page">
-    <table>
-        <tr>
-            <th>Products</th>
-            <th>Quantity</th>
-            <th>SubTotal</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <a href="pro1details.html"><img src="IMAGES/pro1.webp"></a>
-                    <div>
-                        <a href="pro1details.html"><p>25% AHA, 2% BHA, 5% PHA Peeling Solution</p></a>
-                        <small>Price: &#8377 645.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>&#8377 645.00</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <a href="pro5details.html"><img src="IMAGES/pro5.webp"></a>
-                    <div>
-                        <a href="pro5details.html"><p>Argan Oil Hair Mask with White Lotus & Camellia</p></a>
-                        <small>Price: &#8377 600.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>&#8377 600.00</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <a href="pro6details.html"><img src="IMAGES/pro6.webp"></a>
-                    <div>
-                        <a href="pro6details.html"><p>3% Redensyl + 4% Anagain Hair Growth Serum</p></a>
-                        <small>Price: &#8377 895.00</small>
-                        <br>
-                        <a href="">Remove</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>&#8377 895.00</td>
-        </tr>
-    </table>
-    
-    <div class="total-price">
-        <table>
-            <tr>
-                <td>Subtotal</td>
-                <td>&#8377 2140.00</td>
-            </tr>
-            <tr>
-                <td>Shipping</td>
-                <td>Free over 999</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>&#8377 2140.00</td>
-            </tr>
-        </table>
-    </div>
-    
-    
-</div>
-    
+<!--------About us-------->
+ 
+<img src="IMAGES/about-us-1.webp" width="100%" height="100%">
     
 <!-------footer-------->
     <div class="footer">
@@ -162,6 +89,30 @@
                     MenuItems.style.maxHeight = "0px";
                 }
         }
+    </script>
+    
+<!--------js for toggle form------->
+    
+    <script>
+        
+        var LoginForm = document.getElementById("LoginForm");
+        var SignUpForm = document.getElementById("SignUpForm");
+        var Indicator = document.getElementById("Indicator");
+        
+            function signup(){
+                
+                SignUpForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+            
+            function login(){
+                
+                SignUpForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+        
     </script>
     
 </body>
